@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Tracker - Architecture & Interior Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">DLO Creative Lab</a>
+            </div>
+            <h1 class="page-title">AI News Tracker</h1>
+            <div class="nav-links">
+                <a href="../index.html">← Back to Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-small">
+        <div class="container">
+            <h2>Latest AI News for Architecture & Interior Design</h2>
+            <p class="hero-subtitle">Stay updated with curated insights on AI tools, trends, and innovations</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-bar" id="filter-bar">
+                <button class="filter-btn active" data-category="all">All News</button>
+                <button class="filter-btn" data-category="ai-design-tools">AI Design Tools</button>
+                <button class="filter-btn" data-category="visualization">Visualization</button>
+                <button class="filter-btn" data-category="automation">Automation</button>
+                <button class="filter-btn" data-category="architecture-ai">Architecture AI</button>
+                <button class="filter-btn" data-category="interior-design-ai">Interior Design</button>
+                <button class="filter-btn" data-category="favorites">⭐ Favorites</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading State -->
+    <section class="loading-section" id="loading-section">
+        <div class="container">
+            <div class="loading-spinner"></div>
+            <p>Loading AI news articles...</p>
+        </div>
+    </section>
+
+    <!-- Error State -->
+    <section class="error-section hidden" id="error-section">
+        <div class="container">
+            <div class="error-message">
+                <h3>⚠️ Unable to load news articles</h3>
+                <p>There was an error fetching the latest news. Please check your connection and try again.</p>
+                <button class="cta-button" onclick="location.reload()">Retry</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empty State -->
+    <section class="empty-section hidden" id="empty-section">
+        <div class="container">
+            <div class="empty-message">
+                <h3>No articles found</h3>
+                <p id="empty-message-text">Try selecting a different category or check back later for new content.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-grid" id="news-grid">
+                <!-- News cards will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>DLO Creative Lab</h3>
+                    <p>AI News Tracker for Architects & Designers</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/danny-loza/" target="_blank">LinkedIn</a>
+                    <a href="https://www.dlocreativelab.com/" target="_blank">Website</a>
+                    <a href="../index.html">Main Site</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DLO Creative Lab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="storage.js"></script>
+    <script src="filters.js"></script>
+    <script src="rss-proxy.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
